@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <!-- .hover .visited ( these all are pseudo selectors ) -->
+    <style>
+        .container {
+            border: 5px solid cyan;
+            background-color: rgb(223, 245, 201);
+            padding: 35px;
+            width: 500px;
+            margin: 35px auto;
+        }
+
+        a {
+            text-decoration: none;
+            /* any default decoration */
+            color: black;
+        }
+
+        a:hover {
+            /* hover means when you move cursor on it */
+            background-color: rgb(14, 233, 215);
+            color: red;
+        }
+
+        a:visited {
+            /*visited means it will be coloured if you have visitd it once */
+            background-color: rgb(190, 24, 141);
+
+        }
+
+        a:active {
+            color: rgb(255, 255, 255);
+            background-color: rgb(3, 2, 7);
+        }
+
+        .btn {
+            background-color: cyan;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            /*  to make cursor desired */
+            font-size: 13px;
+            border-radius: 4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+
+        }
+
+        /* .btn:hover {
+            color: skyblue;
+            background-color: yellow;
+            border: 5px solid black;
+
+        } */
+
+
+        /* .btn:hover{
+    color: red;
+} */
+    </style>
+</head>
+
+<body>
+    <div class="container" id="con1">
+        <h2>This is my heading</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam suscipit sequi repudiandae repellendus earum
+            eius dolor facilis, optio amet? Fuga odit maiores eos optio delectus impedit non, nisi iste iure!</p>
+        <a href="https:linkedin.com " target="_blank" class="btn">READ MORE</a>
+        <button class="btn">CONTACT US</button>
+
+
+    </div>
+</body>
+
+</html>

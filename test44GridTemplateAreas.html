@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Areas</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                ' navbar navbar navbar navbar'
+                'section section section aside '
+                ' footer footer footer footer  ';
+        }
+
+        .item {
+            background-color: rgb(175, 233, 139);
+            border: 2px solid rgb(8, 106, 83);
+            padding: 3px;
+            color: black;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+            #section {
+                grid-area: section;
+            }
+
+            #aside {
+                grid-area: aside;
+            }
+
+            #footer {
+                grid-area: footer;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home Class Contact Us MR. ROBOT
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magnam
+            tempora eaque cumque necessitatibus iste sed, voluptatibus nesciunt unde, eius ipsa numquam omnis. Labore
+            voluptatum debitis ex molestiae quisquam, quae nulla corrupti id doloremque voluptate. Eaque, magnam
+            incidunt
+            deserunt ea voluptas inventore, modi, perferendis magni culpa vel quam optio. Iste velit quia facilis facere
+            accusantium qui tempore corrupti, perspiciatis dolor autem quisquam cupiditate optio, dolores voluptatem
+            dicta?
+            Quae illo nam esse deserunt possimus animi quia odit fugit eius dolorem, architecto repellendus deleniti
+            fuga
+            reprehenderit at quibusdam fugiat ad consectetur libero aperiam! Recusandae vero quibusdam magnam dolorum.
+        </div>
+        <div id="aside" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis
+            nesciunt
+            molestiae, officia cumque quis soluta fuga porro delectus dignissimos? Nobis soluta facilis quam rerum non
+            quasi
+            possimus veritatis quod rem sed doloribus quaerat molestias accusantium, repellat in et nemo nostrum?
+            Corporis
+
+            sint est fuga pariatur. Dolores maiores delectus magni, doloribus debitis expedita necessitatibus fugit
+            adipisci
+            quisquam rem culpa repudiandae molestiae amet quod ut error dignissimos alias! Quae perferendis magnam unde
+            nobis quia?</div>
+    </div>
+    <footer class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, at minima. Saepe?
+    </footer>
+    <!-- <div class="container"> -->
+    <!-- <div class="item">item-1</div> -->
+    <!-- <div class="item">item-2</div>
+                    <div class="item">item-3</div>
+                    <div class="item">item-4</div>
+                    <div class="item">item-5</div>
+                    <div class="item">item-6</div>
+                    <div class="item">item-7</div>
+                    <div class="item">item-8</div>
+                    <div class="item">item-9</div>
+                    <div class="item">item-10</div>
+                    <div class="item">item-11</div>
+                    <div class="item">item-12</div>
+                    <div class="item">item-13</div>
+                    <div class="item">item-14</div>/div> < -->
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Website</title>
+    <style>
+        body {
+            color: white;
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+         } 
+
+        .navigation {
+            font-family: 'Roboto Mono', monospace;
+
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        body::before {
+            background: url(https://source.unsplash.com/1600x900/?nature,water) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 3px 20px;
+            font-size: 15px;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            height: 400px;
+            margin: 3px 200px;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-family: 'Roboto Mono', monospace;
+            margin: 34px -0px;
+
+        }
+
+        p {
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li> <a href="http://google.com">HOME</a></li>
+                <li>CONTACT US</li>
+                <li>MR. ROBOT</li>
+                <li>ABOUT</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to coding World</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi esse rerum, adipisci beatae iure eveniet,
+            exercitationem error, expedita aut corporis numquam. Laudantium sit eaque, dolorem dolor hic aperiam facilis
+            temporibus molestiae fugit nostrum dolores deleniti sunt aliquid officiis placeat veniam.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            margin: auto;
+            width: 233px;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+        a[target] {
+            font-size: 20px;
+            color: cyan;
+        }
+
+        a[target="_self"] {
+            font-size: 20px;
+            color: rgb(157, 255, 0);
+        }
+
+        input[type="password"] {
+            border: 5px solid blue;
+        }
+
+        /* 
+         This ll apply CSS for third Child :nth-child is  a Pseudo selector which doesn't contain Space 
+        li:nth-child(4) {
+            color: cyan;
+            border: 3px solid red;
+        }
+        li:nth-child(2n+2) {    2n(kitna space hona chaiye) + 3( kha se start ho hona) 
+            color: rgb(117, 179, 29);
+            border: 3px solid rgb(103, 157, 105);
+        } */
+        /* li:nth-child(4n+9) {    /* It works Like table 
+            
+            color: rgb(117, 179, 29);
+            border: 3px solid rgb(103, 157, 105);
+        } */
+        li:nth-child(even) {
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target="_blank">GO TO GOOGLE</a></h1>
+        <h1><a href="https://facebook.com" target="_self">GO TO facebook</a></h1>
+        <form action="" class="fomr-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">1</li>
+            <li class="item" id="item-2">2</li>
+            <li class="item" id="item-3">3</li>
+            <li class="item" id="item-4">4</li>
+            <li class="item" id="item-5">5</li>
+            <li class="item" id="item-6">6</li>
+            <li class="item" id="item-7">7</li>
+            <li class="item" id="item-8">8</li>
+            <li class="item" id="item-9">9</li>
+            <li class="item" id="item-10">10</li>
+            <li class="item" id="item-11">11</li>
+            <li class="item" id="item-12">12</li>
+            <li class="item" id="item-13">13</li>
+            <li class="item" id="item-14">14</li>
+            <li class="item" id="item-15">15</li>
+            <li class="item" id="item-16">16</li>
+            <li class="item" id="item-17">17</li>
+            <li class="item" id="item-18">18</li>
+            <li class="item" id="item-19">19</li>
+            <li class="item" id="item-20">20</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

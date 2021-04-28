@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            /* margin auto is in X to make it center but you can adjust y */
+            border: 10px solid purple;
+            border-color: lightgreen;
+        }
+
+        .item {
+            border: 5px solid blue;
+            margin: 15px 10px;
+            padding: 15px 10px;
+            background: rgb(173, 218, 101);
+
+        }
+
+        #fruits {
+            float: left;
+            ;
+            width: 45%;
+        }
+        #Computer{float: right;
+            ;
+            width: 45% }
+
+        #staitonary {
+            /* float: left; */
+            clear: both; /* clear means that floatation should not dissturb */
+            
+        }
+        
+p, h3 {
+    text-align: justify;
+}
+h1 {
+    text-align: center;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome To MY SToRE</h1>
+        <div id="fruits" class="item">
+            <h2>Fruits</h2>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure
+                pariatur mollitia optio omnis accusamus adipisci iste? Accusantium, aspernatur, libero quod sequi fugiat
+                eligendi ducimus ab ad eum saepe delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae, odit aspernatur consequatur aliquid cupiditate ullam eum provident nihil velit, recusandae ab nemo tempora quos, ratione omnis fugit adipisci cumque?</p>
+        </div>
+
+        <div id="Computer" class="item">
+            <h2>Computer</h2>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure
+                pariatur mollitia optio omnis accusamus adipisci iste? Accusantium, aspernatur, libero quod sequi fugiat
+                eligendi ducimus ab ad eum saepe delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae, odit aspernatur consequatur aliquid cupiditate ullam eum provident nihil velit, recusandae ab nemo tempora quos, ratione omnis fugit adipisci cumque?</p>
+        </div>
+
+        <div id="staitonary" class="item">
+            <h2>staitonary</h2>
+            <p id="staitonarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure
+                pariatur mollitia optio omnis accusamus adipisci iste? Accusantium, aspernatur, libero quod sequi fugiat
+                eligendi ducimus ab ad eum saepe d electus?</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h2>Glasses</h2>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure
+                pariatur mollitia optio omnis accusamus adipisci iste? Accusantium, aspernatur, libero quod sequi fugiat
+                eligendi ducimus ab ad eum saepe d electus?</p>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

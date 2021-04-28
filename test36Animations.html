@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames And Animations</title>
+    <style>
+        .container {
+            background-color: cornflowerblue;
+        }
+
+        .box {
+            color: white;
+            background-color: black;
+            height: 300px;
+            width: 200px;
+            position: relative;
+            /* animation-name: Yogi; */
+            /* animation-name: elliot; */
+            /* animation-duration: 2s; */
+            /* animation-iteration-count: 3; */
+            /*means how many times it will animate */
+            /* animation-fill-mode: alternate; */
+            /* agr wo animation waha pr atki reh zaye toh forward agr nahi toh alternate*/
+            /* animation-timing-function: ease; */
+            /* animation type  like fast or slow*/
+            /* animation-delay: 4s; */
+            /* mtlb ki kitne time baad start ho */
+            /* animation-direction: reverse; */
+            /* animatoin direction */
+            /* animations syntax : animation-name animaton-duration animation-timing-function animation-delay animation-iteration-count-animation-fill-mode */
+            animation: Elliot 0.4s ease 0s infinite  forwards;
+        }
+
+        @keyframes Elliot {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 800px;
+                left: 0px;
+            }
+
+            50% {
+                top: 800px;
+                left: 800px;
+            }
+
+            75% {
+                top: 0px;
+                left: 800px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+
+        }
+
+        @keyframes Yogi {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1000px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is a box </div>
+    </div>
+</body>
+
+</html>

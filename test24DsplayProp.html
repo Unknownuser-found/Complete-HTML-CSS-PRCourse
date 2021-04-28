@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dissplay Properties</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: auto;
+            /*   auto helps in margin center it makes left and right equal*/
+            border: 3px red solid;
+            width: 1000px;
+
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 70px;
+            /* display none hides the element just hide  */
+            /* display block (dispaly:block)  used to make elemnt as block element (DIV) ( we have to set width in this) */
+            /* display inline(dispaly:inline) means the elements will be in a line mostly for text */
+            /* display inline-block (dispaly:inline-block) means the Element ll be block ELememt and will be in a Line */
+            /* in text ELements width and margin does work well thats why we use display */
+        }
+
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+
+
+
+        .box {
+            background-color: grey;
+            margin: 16px 0px;
+            padding: 23px;
+            border: 4px solid black;
+            box-sizing: border-box;
+            /* margin: auto; */
+            display: inline-block;
+            width: 33%;
+        }
+
+        .container {
+            margin: auto;
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://codewithharry.com/static/home/img/photo.png" alt="Error Loading">
+        <h2>Welcome to my BLOG </h2>
+
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates ipsa magni aperiam rerum ad
+                incidunt
+                eius iure eos pariatur repellat sunt saepe obcaecati atque dignissimos harum nesciunt, tempore beatae
+                consequuntur fugiat ipsam aliquam cum hic. Suscipit dolor et, dolore perferendis quis ipsa magnam error!
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates ipsa magni aperiam rerum ad
+                incidunt
+                eius iure eos pariatur repellat sunt saepe obcaecati atque dignissimos harum nesciunt, tempore beatae
+                consequuntur fugiat ipsam aliquam cum hic. Suscipit dolor et, dolore perferendis quis ipsa magnam error!
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates ipsa magni aperiam rerum ad
+                incidunt
+                eius iure eos pariatur repellat sunt saepe obcaecati atque dignissimos harum nesciunt, tempore beatae
+                consequuntur fugiat ipsam aliquam cum hic. Suscipit dolor et, dolore perferendis quis ipsa magnam error!
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

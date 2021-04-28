@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids Tutorial</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        /* grid-template-columns: 300px 400px 400px ; */
+        /* grid-template-columns: 1fr 4fr 1fr;      fr is a unit too  */
+        grid-template-columns: repeat(4, auto);
+        /*syntax=repeart (colums/space ) */
+        /*    type here how much rows you want */
+        grid-gap: 1rem;
+        /*  for gaping vertically */
+
+    }
+
+    .item {
+        /* height: 80px; */
+        /* width: 100px; */
+        background-color: crimson;
+        padding: 5px;
+        margin: 4px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">This is a item-1</div>
+        <div class="item">This is a item-2</div>
+        <div class="item">This is a item-3</div>
+        <div class="item">This is a item-4</div>
+        <div class="item">This is a item-5</div>
+        <div class="item">This is a item-6</div>
+        <div class="item">This is a item-7</div>
+        <div class="item">This is a item-8</div>
+        <!-- <div class="item">This is a item-9</div> -->
+    </div>
+</body>
+
+</html>

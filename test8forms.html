@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and INput</title>
+    <!-- important topic -->
+</head>
+<body>
+    
+    <h2>This is Forms and INPUT practice</h2>
+    <!-- in action where your form data will be save -->
+    <form action="backend.php">
+        <!-- label is good, if we use it then if user click on name he will be in the form  -->
+        <label for="name"> name: </label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <!-- Div tag divides the form downside-->
+        <label for=" Roll"> Roll NO:</label>
+        <div>
+            <input type="number" name="myRole" id=" Roll">
+        </div>
+        <label for="class">My Class</label>
+        <input type="text" name="myClass" id="class">
+        <div>
+        </div>
+        <div>
+        <label for="myDate"> Class:</label>
+            Date: <input type="date" name="myDate">
+        </div>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <div>
+            <!-- for by default it should be checked then add checked at the end of the input  -->
+            Are you elegible?: <input type="checkbox" name="myeligiblity" checked>
+        </div>
+        <div>
+            My Gender?: Male <input type="radio" name="myeligiblity"> feMale <input type="radio"
+                name="myeligiblity">other <input type="radio" name="myeligiblity">
+        </div><br>
+        <!-- textarea helps in writing big pargraphs from users -->
+        <div>
+            Write about yourself:<br> <textarea name="myText" cols="90" rows="10"></textarea>
+        </div><br>
+
+        <div>
+            email : <input type="email" name="myEmail">
+        </div><br>
+        <div>
+            <label for="car">Choose a car:</label>
+            <select name="mycar" id="car">
+                <option value="Indica">India</option>
+                <option value="BMW">BMW</option>
+                <option value="Lambo">Lambo</option>
+                <option value="Mercerdies" selected>Mercerdies</option>
+            </select>
+        </div><br>
+        <!-- always use label before writing div  -->
+        <div>
+            <input type="submit" value="Submit Now">
+
+        </div>
+
+        <div>
+            <input type="reset" value="Reset Now"> 
+        </div>
+
+    </form>
+
+</body>
+
+</html>

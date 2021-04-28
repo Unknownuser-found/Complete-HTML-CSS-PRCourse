@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        :root {
+            --primary-color: rgb(36, 198, 146);
+            --danger-color: rgb(216, 26, 26);
+            --yc : yellow ;
+            --maxw: 400px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid red;
+            box-shadow: 10px 10px var(--danger-color);
+            margin: 2px 10px;
+
+        }
+
+        .container {
+            width: var(--maxw);
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-color: var(--yc);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

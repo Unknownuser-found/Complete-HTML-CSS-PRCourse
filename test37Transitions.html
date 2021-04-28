@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transitions</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box {
+            height: 200px;
+            display: flex;
+            width: 200px;
+            justify-content: center;
+            align-content: center;
+            /*align content spacing ko barabar krta h*/
+            align-items: center;
+            background-color: yellow;
+            transition-property: background-color;
+            transition-duration: 3s;
+            /* transition-timing-function: ease; */
+            transition-delay: 0s;
+            /* transition syntax: transition-property tranisition-duration transition-timing-function transition-delay */
+            /* transition : background-color 3s ease 0s ; */
+            transition: all 1s ease 0s;
+
+        }
+
+        .box:hover {
+            background-color: cyan;
+            height: 400px;
+            width: 300px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is CSS transitions tutorial</h3>
+    <div class="container">
+        <div class="box">
+            This is my BOX
+        </div>
+
+    </div>
+</body>
+
+</html>

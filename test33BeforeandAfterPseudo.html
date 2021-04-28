@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Pseudo Selectors</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+
+        header::before {
+            background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            opacity: 0.3;
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 5px 24px;
+        }
+
+        section {
+            display: flex;
+            /* display:DIrection Row is Default */
+            margin: 3px 23px;
+            align-items: center;
+            text-align: center;
+            height: 300px;
+            justify-content: center;
+            flex-flow: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        /* section::after{
+            content:" THis is Content"
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>WELCOME TO CODING WORLD</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci explicabo error rem itaque id
+            reprehenderit velit deleniti maiores cum ab voluptas, fugiat quas cumque officiis, dicta delectus
+            corrupti omnis architecto necessitatibus quo? Asperiores.</p>
+    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores explicabo debitis quibusdam incidunt modi excepturi nam delectus aut labore facilis nesciunt deserunt, ea perferendis illum sunt consequuntur aliquam, hic animi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, amet inventore totam hic necessitatibus impedit non ullam nam fugiat odio illum obcaecati, aut unde deserunt, saepe quod fuga. Corrupti porro dolor, debitis dolorum asperiores hic repellat quod dolorem cum quos rem commodi! Ab quaerat nulla eius, quod molestias adipisci fuga fugiat aliquid fugit itaque architecto officiis modi cum dolore omnis non dicta minus odio nostrum deserunt, nam ad animi. Fuga, asperiores laudantium commodi omnis dolores quos temporibus odio illum autem amet! Reiciendis iusto libero assumenda beatae magni mollitia. Ipsum, nihil accusantium porro cum deserunt accusamus? Placeat itaque consectetur aperiam nesciunt!lorem400 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat debitis pariatur, molestiae architecto obcaecati magnam culpa? Sit numquam laboriosam dignissimos recusandae sequi accusamus quaerat architecto, nam iure maiores ipsa itaque minus aut cumque incidunt minima libero nesciunt, autem quam repellendus omnis. Dolore voluptas nam modi magni reiciendis aut id consequatur asperiores. Alias itaque odio aliquid molestias non, eligendi dolorum consequuntur eum! Accusamus id quis autem laborum voluptas, est consequatur ipsum consequuntur culpa fuga rem maiores voluptatibus perferendis quo? Laboriosam numquam exercitationem fuga amet eum molestias voluptatibus inventore. Voluptatum dolores assumenda quis at, deleniti est minima eveniet nesciunt aut harum unde sequi eos provident dolore. Molestias inventore illum, molestiae unde tempora magnam doloremque fugiat veniam ea a quam ad alias enim distinctio eligendi voluptate possimus iure hic ut nihil neque exercitationem amet iste! Natus sapiente repudiandae unde eius dicta, quas asperiores illo at vel! Sunt illum quod natus voluptatibus id ea maiores dolorem, praesentium, nostrum magnam quos quasi ex debitis eaque nesciunt? Doloremque et incidunt vitae asperiores nulla culpa dolore illo, quod officia voluptas explicabo fugiat eaque! Repudiandae dolores, provident quidem optio rerum, consectetur sequi mollitia facilis quaerat, reprehenderit non delectus et minima officiis expedita nihil aspernatur reiciendis quibusdam fugit vero ducimus illo! Iusto non alias modi aperiam itaque voluptatum nulla et odit provident ut nisi fuga perferendis, facere esse ullam placeat quisquam accusantium quibusdam molestiae natus, saepe nostrum architecto. Ipsa laboriosam id esse molestias sint libero sequi autem expedita praesentium, inventore quasi error animi accusantium minima alias quibusdam. Tenetur eos similique possimus voluptatum dolores explicabo unde animi perferendis velit, incidunt iure nostrum error non deserunt quibusdam praesentium nihil hic natus necessitatibus ipsam vitae voluptate nam nemo rem. Neque, unde aliquid sed reprehenderit, quasi minus, iure ipsam amet aperiam quas id facilis architecto minima. Ipsa deserunt ducimus, repellat corrupti nulla beatae quibusdam nobis debitis totam quaerat consectetur, officiis quos ut? Harum et ea ipsa in laudantium facilis, alias odit cumque sequi quos, exercitationem tempore. Pariatur explicabo placeat cumque iusto? Sint animi eum aliquam blanditiis temporibus laudantium similique tempora ad non asperiores facere pariatur explicabo quisquam, voluptatem adipisci eligendi iste consectetur vel expedita consequuntur ducimus modi debitis odit. Velit, possimus corrupti cum commodi facere dolorum laudantium alias quibusdam a! Minima doloribus magnam commodi cupiditate rerum illum? Deserunt tenetur eligendi eos dignissimos, voluptatem laboriosam dolore eius eum cumque ipsum facilis, nemo blanditiis aperiam voluptates? Culpa nesciunt aspernatur tempora atque, nobis dicta odio deleniti.
+    </p>
+    <hr>
+
+</body>
+
+</html>

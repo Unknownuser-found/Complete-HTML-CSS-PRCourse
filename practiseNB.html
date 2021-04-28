@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        .navbar {
+            overflow: auto;
+        }
+
+        .navbar li {
+            list-style: none;
+        }
+
+        .navbar {
+            background-color: rgb(2, 29, 24);
+            border: 5px solid rgb(72, 211, 169);
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            color: rgb(72, 211, 169);
+        }
+
+        .navbar a {
+            float: left;
+            text-decoration: none;
+            color: white;
+            padding-bottom: 10px;
+            padding-left: 30px;
+        }
+
+        .search {
+            padding: 4px 30px ;
+            float: right;
+            
+        }
+
+        .navbar input {
+            border: 3px solid rgb(30, 30, 31);
+            border-radius: 14px;
+            padding: 2px 20px;
+            /* width: 170px; */
+            padding-top: 3px;
+            text-align: center ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://google.com">HOME </a></li>
+                <li><a href="#">CLASS</a></li>
+                <li><a href="#">ABOUT </a></li>
+                <li> <a href="#">MR. ROBOT</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+
+</body>
+
+</html>

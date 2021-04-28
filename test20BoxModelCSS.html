@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+</head>
+<style>
+    .container {
+        background-color: red;
+        border: 10px solid #b296e4;
+        /* we can set padding left , right, top  , bottom as desired
+    padding-left: 40px;
+    padding-bottom: 40px; */
+
+        /* padding syntax in short: top right bottom left ; 
+        padding: 24px 10px 10px 25px; */
+
+        /* paddingsyntax for in two: y(top/bottom) x (left/right) ; */
+        padding: 29px 20px;
+
+        /* we can set margin  left , right, top  , bottom as desired 
+      margin syntax is also same y(top/bottom) x (left/right) ;    */
+        margin: 10px 14px  ;
+
+
+        border-radius: 20px;
+        width: 500px;
+        display: inline-flex;
+       }
+       *{
+           /* box-sizing means that the text should be in only in box  */
+        box-sizing: border-box;
+       }
+
+       body{
+           background-color: #b296e4;
+       }
+</style>
+
+<body>
+    <div class="container">
+        <h3>This test is about BOX MODEL in CSS</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae quis rem deserunt pariatur
+            inventore aspernatur dignissimos voluptas necessitatibus voluptates.</p>
+    </div>
+
+
+    <div class="container">
+        <h3>This test is about BOX MODEL in CSS</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae quis rem deserunt
+            pariatur inventore aspernatur dignissimos voluptas necessitatibus voluptates.</p>
+    </div>
+
+    <div class="container">
+
+        <h3>THis test is about BOX MODEL in CSS</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae quis rem deserunt pariatur
+            inventore aspernatur dignissimos voluptas necessitatibus voluptates.</p>
+    </div>
+
+</body>
+
+</html>

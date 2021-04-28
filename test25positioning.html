@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positining in CSS</title>
+    <style>
+        /*CSS  Position : static (default ),  relative, absolute, fixed, sticky */
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            background-color: black;
+            color: rgb(37, 172, 25);
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        .container {
+            border: 3px solid rgb(29, 93, 115);
+            background-color: rgb(180, 216, 157);
+            height: 4000px;
+        }
+
+        #box3,
+        #box1,
+        #box2,
+        #box4 {
+            /* position: relative :you can move it then by top/bottom and left/right as desired ) */
+            /* position: absolute : you can change its positon relative to its parent( parent means the id or class in which it exist) */
+            /* position : fixed :  means that the element will be fixed when you scroll the page(brwser window) placement details must   */
+            /* position: sticky: means that the Element ll be stick at desired place but set where to stick mostly for NAV BAR */
+
+            position: relative;
+            top: 3px;
+
+
+        }
+
+        p {
+            border: 3px solid grey;
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo eveniet suscipit ut nemo vero
+            obcaecati a laborum, consequatur quae, dolores, commodi architecto earum assumenda enim nostrum?
+            Adipisci, necessitatibus officiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad iusto
+            sint doloremque assumenda, officia aspernatur distinctio earum excepturi illo minus odio eos nobis
+            mollitia hic praesentium, necessitatibus perferendis. Et, natus?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cupiditate autem sit ipsam pariatur quibusdam laboriosam eum nam a saepe praesentium
+            velit, porro illo vero fugit reprehenderit, sapiente eius! Distinctio amet odit illum voluptatem ipsam
+            id tenetur! Vero possimus expedita voluptates?</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo eveniet suscipit ut nemo vero
+            obcaecati a laborum, consequatur quae, dolores, commodi architecto earum assumenda enim nostrum?
+            Adipisci, necessitatibus officiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad iusto
+            sint doloremque assumenda, officia aspernatur distinctio earum excepturi illo minus odio eos nobis
+            mollitia hic praesentium, necessitatibus perferendis. Et, natus?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cupiditate autem sit ipsam pariatur quibusdam laboriosam eum nam a saepe praesentium
+            velit, porro illo vero fugit reprehenderit, sapiente eius! Distinctio amet odit illum voluptatem ipsam
+            id tenetur! Vero possimus expedita voluptates?</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo eveniet suscipit ut nemo vero
+            obcaecati a laborum, consequatur quae, dolores, commodi architecto earum assumenda enim nostrum?
+            Adipisci, necessitatibus officiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad iusto
+            sint doloremque assumenda, officia aspernatur distinctio earum excepturi illo minus odio eos nobis
+            mollitia hic praesentium, necessitatibus perferendis. Et, natus?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cupiditate autem sit ipsam pariatur quibusdam laboriosam eum nam a saepe praesentium
+            velit, porro illo vero fugit reprehenderit, sapiente eius! Distinctio amet odit illum voluptatem ipsam
+            id tenetur! Vero possimus expedita voluptates?</p><br>
+
+    </div>
+
+</body>
+
+</html>

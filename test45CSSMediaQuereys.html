@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries </title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                ' navbar navbar navbar navbar'
+                'section section section aside '
+                ' footer footer footer footer  ';
+
+
+        }
+
+        @media only screen and (max-width:767px) {
+            body {
+                /* display: block; */
+                background-color: rgb(156, 245, 13);
+                color: black;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    ' navbar navbar navbar navbar'
+                    'section section section section '
+                    'aside aside aside aside '
+                    ' footer footer footer footer  ';
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width:1023px) {
+            body {
+                /* display: block; */
+                background-color: cyan;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    ' navbar navbar navbar navbar'
+                    'section section section section '
+                    'aside aside aside aside '
+                    ' footer footer footer footer  ';
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) and (max-width:2559px) {
+            body {
+
+                background-color: rgb(128, 13, 84);
+            }
+        }
+
+        @media only screen and (min-width: 2560px) {
+            body {
+
+                background-color: rgb(78, 203, 37);
+            }
+
+        }
+
+        .bdr {
+            border: 2px solid rgba(255, 132, 0, 0.864);
+            padding: 23px;
+            background-color: rgb(91, 89, 106);
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <nav class="bdr">
+            Home Services Contact Us Mr. Robot
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS Sin HIndi</h2>
+        </section>
+        <aside class="bdr">
+            <h1>More ABout US</h1>
+        </aside>
+    </div>
+    <footer class="bdr">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ducimus ullam fuga!
+    </footer>
+</body>
+
+</html>

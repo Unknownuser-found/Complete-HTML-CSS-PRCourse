@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        margin: 15px 20px;
+        padding: 23px 12px;
+        border: 2px solid red;
+        background-color: lightcyan;
+        /* box-shadow syntax : offset-x offset-y blur-radius spread-radius color  */
+        /* box-shadow: 13px 10px 15px 18px green; */
+        box-shadow: 13px 10px 15px 18px rgba(58, 130, 37, 0.3);  /* RGBA means red, green ,blue and alpha (Opacity) */
+        /* box-shadow: 13px 10px 15px 18px rgba(58, 130, 37, 0.3), 13px 10px 15px 18px rgba(142, 216, 23, 1);  For Multiple uses os shadows */
+        box-shadow:inset 13px 10px 15px 18px rgba(58, 130, 37, 0.3);
+    }
+.card h2{
+    text-shadow: 3px 3px royalblue; /* same syntax a box shadow */
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2> Card1 </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nisi aliquid, ad quis fugit ipsam autem
+                sequi sit incidunt error omnis neque ea accusantium voluptates amet necessitatibus consequatur nulla
+                unde perferendis odio placeat porro.</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nisi aliquid, ad quis fugit ipsam autem
+                sequi sit incidunt error omnis neque ea accusantium voluptates amet necessitatibus consequatur nulla
+                unde perferendis odio placeat porro.</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card3 </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nisi aliquid, ad quis fugit ipsam autem
+                sequi sit incidunt error omnis neque ea accusantium voluptates amet necessitatibus consequatur nulla
+                unde perferendis odio placeat porro.</p>
+        </div>
+    </div>
+</body>
+
+</html>
